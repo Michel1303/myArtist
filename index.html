@@ -4,158 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi Artista - Luis Alfonso</title>
-    <style>
-      /* Reset básico */
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      body {
-        font-family: "Arial", sans-serif;
-        color: #fff;
-        background-color: #1a1a1a;
-      }
-
-      /* Estilos de la barra de navegación */
-      nav {
-        background-color: #222;
-        color: #ffcc00;
-        padding: 1em;
-        text-align: center;
-        position: sticky;
-        top: 0;
-        z-index: 10;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-      }
-
-      nav h1 {
-        font-size: 2em;
-        font-weight: bold;
-        letter-spacing: 2px;
-      }
-
-      /* Sección del encabezado */
-      .header {
-        text-align: center;
-        padding: 2em;
-        background-image: url("../myArtist/assets/img/luis_con_un_caballo.jpg"); /* Imagen de portada */
-        background-size: cover;
-        background-position: center;
-        color: #fff;
-        box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
-      }
-
-      .header img {
-        border-radius: 50%;
-        width: 200px;
-        height: 200px;
-        border: 5px solid #ffcc00;
-        margin-top: 1em;
-      }
-
-      .header h2 {
-        margin-top: 1em;
-        font-size: 1.8em;
-      }
-
-      /* Estilos de la lista de canciones */
-      .song-list-container {
-        text-align: center;
-        padding: 2em;
-        background-color: #2c2c2c;
-      }
-
-      .song-list {
-        list-style: none;
-        padding: 0;
-        max-width: 600px;
-        margin: 0 auto;
-      }
-
-      .song-item {
-        display: flex;
-        align-items: center;
-        background-color: #333;
-        margin-bottom: 10px;
-        padding: 10px;
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-        color: #ffcc00;
-      }
-
-      .song-item img {
-        width: 60px;
-        height: 60px;
-        border-radius: 5px;
-        margin-right: 15px;
-      }
-
-      .song-info {
-        flex: 1;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-
-      .song-info h4 {
-        margin: 0;
-        font-size: 1.2em;
-        font-weight: bold;
-      }
-
-      .song-duration {
-        font-size: 0.9em;
-        color: #ccc;
-      }
-
-      /* Estilos del aside de descripción */
-      aside {
-        background-color: #333;
-        padding: 1em;
-        margin: 2em auto;
-        border-radius: 8px;
-        max-width: 600px;
-        color: #ffcc00;
-        font-style: italic;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-        text-align: center;
-      }
-
-      /* Estilo del botón de reproducción */
-      #play-button {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        padding: 15px 20px;
-        background-color: #ffcc00;
-        color: #1a1a1a;
-        font-size: 1em;
-        font-weight: bold;
-        border: none;
-        border-radius: 50px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-        cursor: pointer;
-        transition: all 0.3s ease;
-        z-index: 20;
-      }
-
-      #play-button:hover {
-        background-color: #ffd633;
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
-        transform: scale(1.1);
-      }
-
-      #play-button:active {
-        transform: scale(1);
-      }
-
-      /* Estilo del reproductor de audio */
-      audio {
-        display: none; /* Esconde el reproductor */
-      }
-    </style>
+    <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
   <body>
     <!-- Barra de navegación -->
@@ -165,10 +14,7 @@
 
     <!-- Encabezado principal -->
     <div class="header">
-      <img
-        src="../myArtist/assets/img/luis_normal.webp"
-        alt="Foto del Artista"
-      />
+      <img src="./assets/img/luis_normal.webp" alt="Foto del Artista" />
       <h2>Álbum: Contentoso</h2>
     </div>
 
@@ -179,7 +25,7 @@
         <!-- Ejemplo de canción -->
         <li class="song-item">
           <img
-            src="../myArtist/assets/img/albums/chismofilia.jfif"
+            src="./assets/img/albums/chismofilia.jfif"
             alt="Portada Canción 1"
           />
           <div class="song-info">
@@ -189,7 +35,7 @@
         </li>
         <li class="song-item">
           <img
-            src="../myArtist/assets/img/albums/doce_y_treinta.jfif"
+            src="./assets/img/albums/doce_y_treinta.jfif"
             alt="Portada Canción 2"
           />
           <div class="song-info">
@@ -198,10 +44,7 @@
           </div>
         </li>
         <li class="song-item">
-          <img
-            src="../myArtist/assets/img/albums/dolidos.jfif"
-            alt="Portada Canción 3"
-          />
+          <img src="./assets/img/albums/dolidos.jfif" alt="Portada Canción 3" />
           <div class="song-info">
             <h4>Los Dolidos</h4>
             <span class="song-duration">3:40</span>
@@ -209,7 +52,7 @@
         </li>
         <li class="song-item">
           <img
-            src="../myArtist/assets/img/albums/el_cabron_soy_yo.jfif"
+            src="./assets/img/albums/el_cabron_soy_yo.jfif"
             alt="Portada Canción 4"
           />
           <div class="song-info">
@@ -219,7 +62,7 @@
         </li>
         <li class="song-item">
           <img
-            src="../myArtist/assets/img/albums/sali_a_beber.jfif"
+            src="./assets/img/albums/sali_a_beber.jfif"
             alt="Portada Canción 5"
           />
           <div class="song-info">
@@ -232,9 +75,9 @@
 
     <!-- Descripción en aside -->
     <aside>
-      Sumérgete en la esencia de [Nombre del Artista]. Este álbum es una
-      colección de sonidos únicos, con letras profundas que resuenan en cada
-      acorde. Un viaje inolvidable.
+      El nuevo álbum de Luis Alfonso fusiona tradición y modernidad,
+      destacándose con colaboraciones de grandes artistas y una producción
+      impecable. .
     </aside>
 
     <!-- Reproductor de audio de fondo -->
